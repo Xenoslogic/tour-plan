@@ -1,14 +1,37 @@
-.header
+.navbar
 	background-color: #ffffff
 	&-top
 		display: flex
 		align-items: center
 		justify-content: space-between
 		padding: 40px 0px
+		&__menu-button
+			display: none
 	&__search
 		margin-right: auto
 		margin-left: 108px
-	
+	&-menu
+		background: $dark
+		&__navigation
+			margin: 0
+			padding: 31px 0px
+			list-style-type: none
+			display: flex
+			align-items: center
+			justify-content: space-between			
+			color: $light
+		&__link
+			color: $light
+			text-decoration: none
+			text-transform: uppercase
+			font-weight: 700
+			font-size: 14px
+			line-height: 18px
+		&__item
+			&_mob					
+				&_visible
+					display: none
+					width: 80%
 
 .logo
 	width: 177px
@@ -27,8 +50,6 @@
 		padding-right: 75px
 		background-color: $light-blue
 		border: none
-		font-family: 'Muli', sans-serif
-		font-weight: 400
 		font-size: 12px
 		line-height: 15px
 		color: $text-color
@@ -56,20 +77,10 @@
 		font-size: 14px
 		line-height: 18px
 		color: $text-color
-.header-nav
-	background-color: $dark-blue
 
-	&__menu
-		display: flex
-		align-items: center
-		justify-content: space-between
-		list-style: none
-		margin: 0
-		padding: 32px 0
-		&-link
-			text-transform: uppercase
-			text-decoration: none
-			color: #ffffff
-			font-weight: 700
-
-
+.menu
+	&-button
+		outline: none
+		border: none
+		&:focus
+			outline: none

@@ -3,11 +3,9 @@
 }
 
 body {
-  font-family: "Muli", sans-serif;
-  font-size: 14px;
-  line-height: 18px;
-  font-weight: 400;
+  font-family: "Mulish", sans-serif;
   color: #333333;
+  background-color: #f5fafe;
 }
 
 .container {
@@ -32,18 +30,65 @@ body {
   font-size: 12px;
 }
 
-.header {
+.button {
+  min-width: 160px;
+  min-height: 50px;
+  padding: 18px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: white;
+  background-color: #EC1F46;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+}
+
+a:hover {
+  text-shadow: 0 0 1px #ffffff;
+}
+
+.navbar {
   background-color: #ffffff;
 }
-.header-top {
+.navbar-top {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 40px 0px;
 }
-.header__search {
+.navbar-top__menu-button {
+  display: none;
+}
+.navbar__search {
   margin-right: auto;
   margin-left: 108px;
+}
+.navbar-menu {
+  background: #0A223D;
+}
+.navbar-menu__navigation {
+  margin: 0;
+  padding: 31px 0px;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+.navbar-menu__link {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+}
+.navbar-menu__item_mob_visible {
+  display: none;
+  width: 80%;
 }
 
 .logo {
@@ -65,8 +110,6 @@ body {
   padding-right: 75px;
   background-color: #f5fafe;
   border: none;
-  font-family: "Muli", sans-serif;
-  font-weight: 400;
   font-size: 12px;
   line-height: 15px;
   color: #333333;
@@ -100,21 +143,142 @@ body {
   color: #333333;
 }
 
-.header-nav {
-  background-color: #0A223D;
+.menu-button {
+  outline: none;
+  border: none;
 }
-.header-nav__menu {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  list-style: none;
-  margin: 0;
-  padding: 32px 0;
+.menu-button:focus {
+  outline: none;
 }
-.header-nav__menu-link {
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #ffffff;
-  font-weight: 700;
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (max-width: 992px) {
+  a:hover {
+    text-shadow: none;
+  }
+
+  .container {
+    max-width: 700px;
+  }
+
+  .logo {
+    width: 132px;
+  }
+
+  .navbar__search {
+    margin-left: auto;
+  }
+  .navbar-top {
+    padding: 30px 0px;
+  }
+  .navbar-menu__navigation {
+    padding: 22px 0px;
+  }
+  .navbar-menu__link {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .search__input {
+    min-width: 340px;
+  }
+}
+@media (max-width: 767px) {
+  body {
+    padding-top: 78px;
+  }
+
+  .container {
+    max-width: 690px;
+    width: 92%;
+  }
+
+  .navbar_mob-fixed {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 99;
+  }
+  .navbar__search_mob_hidden, .navbar__user_mob_hidden {
+    display: none;
+  }
+  .navbar__search_mob_visible, .navbar__user_mob_visible {
+    display: flex;
+  }
+  .navbar__user {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .navbar-menu {
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 78px;
+    bottom: 0;
+    padding-top: 30px;
+  }
+  .navbar-menu__navigation {
+    flex-direction: column;
+  }
+  .navbar-menu__item {
+    margin-bottom: 20px;
+  }
+  .navbar-menu__item_mob_visible {
+    display: block;
+    margin-bottom: 39px;
+  }
+  .navbar-menu_visible {
+    display: block;
+  }
+  .navbar-top__menu-button {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    width: 16px;
+    height: 11px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    outline: none;
+  }
+  .navbar-top__menu-button:focus {
+    outline: none;
+  }
+  .navbar-top__menu__image {
+    width: 16px;
+    height: 11px;
+  }
+
+  .user__name_light {
+    color: white;
+    margin-left: 0px;
+    margin-top: 10px;
+    margin-bottom: 7px;
+  }
+
+  .search__input {
+    min-width: auto;
+  }
+}
+@media (max-width: 600px) {
+  .logo {
+    width: 99px;
+  }
+}
+@media (max-height: 583px) {
+  .navbar-menu_visible {
+    overflow-y: scroll;
+  }
+}
+@media (max-height: 422px) {
+  .modal__dialog {
+    overflow-y: scroll;
+  }
 }
 /*# sourceMappingURL=style.css.map */
