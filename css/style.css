@@ -532,9 +532,12 @@ a:hover {
 
   .stars {
     flex-basis: inherit;
-    margin-right: 20px;
+    margin-right: 35px;
   }
 
+  .hotel {
+    padding-top: 5px;
+  }
   .hotel-name {
     flex-basis: 100%;
   }
