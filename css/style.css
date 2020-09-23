@@ -728,7 +728,7 @@ a:hover {
 
   .map {
     width: 280px;
-    min-height: 173px;
+    height: 173px;
   }
 }
 @media (max-height: 583px) {
