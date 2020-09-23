@@ -8,30 +8,32 @@
 		<link rel="icon" href="favicon.ico" type="image/x-icon" />
 		<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/swiper-bundle.min.css" />
+		<link rel="stylesheet" href="css/aos.css" />
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
-		<header class="navbar navbar_mob-fixed">
+				<header class="navbar navbar_mob-fixed">
 			<div class="container">
 				<div class="navbar-top">
 					<a href="index.html" class="logo">
-						<img src="img/header/horizontal-logo.svg" alt="Logo: Best Tour Plan" class="image logo__image"/>
+						<img src="img/horizontal-logo.svg" alt="Logo: Best Tour Plan" class="image logo__image" />
 					</a>
 
 					<form action="#" class="search navbar__search navbar__search_mob_hidden">
-						<input type="text" class="search__input" placeholder="Search Location"/>
+						<input type="text" class="search__input" placeholder="Search Location" />
 						<button class="search__button">
-							<img src="img/header/search.svg" alt="Icon: search" class="image"/>
+							<img src="img/search.svg" alt="Icon: search" class="image" />
 						</button>
 					</form>
 
 					<a href="#" class="user navbar__user navbar__user_mob_hidden">
-						<img src="img/header/user-avatar.jpg" alt="Avatar: Nathan" class="image user__avatar"/>
+						<img src="img/user-avatar.jpg" alt="Avatar: Nathan" class="image user__avatar" />
 						<span class="user__name">Nathan</span>
 					</a>
 
 					<button class="menu-button navbar-top__menu-button">
-						<img class="image menu-button__image" src="img/three-bars.svg" alt="Icon: burger menu"/>
+						<img class="image menu-button__image" src="img/three-bars.svg" alt="Icon: burger menu" />
 					</button>
 				</div>
 				<!-- /.navbar-top -->
@@ -103,15 +105,15 @@
 					<div class="hotel-info__text">
 						<div class="hotel-wrapper">
 							<div class="stars">
-								<img src="img/star.svg" alt="Icon: Star" class="image star"  />
-								<img src="img/star.svg" alt="Icon: Star" class="image star"  />
-								<img src="img/star.svg" alt="Icon: Star" class="image star"  />
-								<img src="img/star.svg" alt="Icon: Star" class="image star"  />
-								<img src="img/star.svg" alt="Icon: Star" class="image star"  />
+								<img src="img/star.svg" alt="Icon: Star" class="image star" data-aos="fade-down" data-aos-duration="400" />
+								<img src="img/star.svg" alt="Icon: Star" class="image star" data-aos="fade-down" data-aos-duration="500" />
+								<img src="img/star.svg" alt="Icon: Star" class="image star" data-aos="fade-down" data-aos-duration="600" />
+								<img src="img/star.svg" alt="Icon: Star" class="image star" data-aos="fade-down" data-aos-duration="700" />
+								<img src="img/star.svg" alt="Icon: Star" class="image star" data-aos="fade-down" data-aos-duration="800" />
 							</div>
 							<!-- /.stars -->
 							<h1 class="hotel-name hotel-info__name">GRAND HILTON HOTEL</h1>
-							<span class="offer hotel-info__offer">Flash Offer</span>
+							<span class="offer hotel-info__offer" data-aos="fade-down">Flash Offer</span>
 						</div>
 						<!-- /.hotel-wrapper -->
 
@@ -129,5 +131,91 @@
 					<!-- /.hotel-info__rating -->
 				</div>
 				<!-- /.hotel-info -->
-			</div>
+			
 			<!-- /.container -->	
+				<div class="hotel-grid">
+					<div class="slider hotel-grid__slider">
+						<!-- Slider main container -->
+						<div class="swiper-container hotel-slider">
+							<!-- Additional required wrapper -->
+							<div class="swiper-wrapper">
+								<!-- Slides -->
+								<div class="swiper-slide hotel-slider__item">
+									<img loading="lazy" src="img/slide-1.jpg" alt="Image: Slider image" class="image hotel-slider__image" />
+								</div>
+								<div class="swiper-slide hotel-slider__item">
+									<img loading="lazy" src="img/slide-2.jpg" alt="Image: Slider image" class="image hotel-slider__image" />
+								</div>
+								<div class="swiper-slide hotel-slider__item">
+									<img loading="lazy" src="img/slide-3.jpg" alt="Image: Slider image" class="image hotel-slider__image" />
+								</div>
+								<div class="swiper-slide hotel-slider__item">
+									<img loading="lazy" src="img/slide-4.jpg" alt="Image: Slider image" class="image hotel-slider__image" />
+								</div>
+								<div class="swiper-slide hotel-slider__item">
+									<img loading="lazy" src="img/slide-5.jpg" alt="Image: Slider image" class="image hotel-slider__image" />
+								</div>
+							</div>
+
+							<button class="hotel-slider__button hotel-slider__button_prev"></button>
+							<button class="hotel-slider__button hotel-slider__button_next"></button>
+						</div>
+						<!-- /.swiper-container -->
+					</div>
+					<!-- /.slider -->
+					<div class="hotel-about">
+						<div class="booking">
+							<div class="booking__info">
+								<div class="booking__price">
+									<span class="booking__start">price starts as</span>
+
+									<strong class="booking__pricetag">$ 8,500</strong>
+									<span class="booking__per-room">per room / night</span>
+								</div>
+								<!-- /.booking__price -->
+								<div class="booking__room">
+									<div class="booking__text">
+										<img src="img/user.svg" alt="Icon: User" class="image booking__icon" />
+										<span class="booking__description">2 x Guests</span>
+									</div>
+									<!-- /.booking__text -->
+
+									<div class="booking__text">
+										<img src="img/home.svg" alt="Icon: Home" class="image booking__icon" />
+										<span class="booking__description">1 x Room</span>
+									</div>
+									<!-- /.booking__text -->
+								</div>
+								<!-- /.booking__room -->
+							</div>
+							<!-- /.booking__info -->
+							<div class="booking__call-center">
+								<span class="booking__heading">Quick Booking</span>
+								<a class="booking__number" href="tel:12100"
+									><img src="img/phone-call.svg" alt="Icon: Phone" />
+									<span class="booking__phone">12100</span>
+								</a>
+							</div>
+							<!-- /.booking__call-center -->
+							<button class="button booking__button" data-toggle="modal" data-href="#booking-modal">View Other Options</button>
+						</div>
+						<!-- /.booking -->
+						<div class="map">
+							<img src="img/map.jpg" alt="map" class="map__image" />
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.0413263625383!2d98.29254741537973!3d7.890745494315375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30503b7bfcd9f903%3A0xf7065fac1e3d7c48!2sDoubleTree%20by%20Hilton%20Phuket%20Banthai%20Resort!5e0!3m2!1sru!2sru!4v1600844883933!5m2!1sru!2sru" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+							
+						</div>
+						<!-- /.map -->
+					</div>
+					<!-- /.hotel-about -->
+				</div>
+				<!-- /.hotel-grid -->
+			</div>
+			
+			<!-- /.container -->
+		</section>
+		
+		<script src="js/jquery-3.5.1.min.js"></script>
+		<script src="js/swiper-bundle.min.js"></script>
+		<script src="js/main.js"></script>
+	</body>
