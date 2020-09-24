@@ -713,8 +713,15 @@ a:hover {
   }
 
   .card {
-    width: 230px;
-    height: 230px;
+    width: 255px;
+    height: 255px;
+  }
+
+  .activities__card {
+    margin-right: 20px;
+  }
+  .activities__card:nth-child(4n) {
+    margin-right: 0;
   }
 }
 /****************************/
@@ -803,11 +810,12 @@ a:hover {
     margin: 0 auto;
   }
   .activities__card {
+    margin: 0px;
     margin-bottom: 20px;
   }
 
   .card {
-    width: 339px;
+    width: 48%;
     height: 255px;
   }
 }
@@ -962,18 +970,21 @@ a:hover {
   .reviews-slider__item:before, .reviews-slider__item:after {
     display: none;
   }
+  .reviews-slider__text {
+    text-align: left;
+  }
   .reviews-slider__button {
     top: 30px;
     transform: translate(-50%, 0);
   }
   .reviews-slider__button_prev {
     left: 50%;
-    margin-left: -65px;
+    margin-left: -105px;
     transform: translate(-50%, 0);
   }
   .reviews-slider__button_next {
     right: 50%;
-    margin-right: -65px;
+    margin-right: -105px;
     transform: translate(50%, 0);
   }
 
@@ -1023,8 +1034,38 @@ a:hover {
     border: blue 5px;
   }
 
+  .reviews {
+    padding-bottom: 50px;
+  }
   .reviews__title {
     max-width: 250px;
+    margin-bottom: 42px;
+    font-size: 18px;
+    line-height: 23px;
+  }
+  .reviews-slider__item {
+    padding: 0 30px 30px;
+    width: 100%;
+  }
+  .reviews-slider__item:before, .reviews-slider__item:after {
+    display: none;
+  }
+  .reviews-slider__text {
+    text-align: left;
+  }
+  .reviews-slider__button {
+    top: 30px;
+    transform: translate(-50%, 0);
+  }
+  .reviews-slider__button_prev {
+    left: 50%;
+    margin-left: -105px;
+    transform: translate(-50%, 0);
+  }
+  .reviews-slider__button_next {
+    right: 50%;
+    margin-right: -105px;
+    transform: translate(50%, 0);
   }
 
   .activities__title {
@@ -1036,6 +1077,7 @@ a:hover {
 
   .card {
     width: 100%;
+    margin-bottom: 15px;
   }
 }
 /****************************/

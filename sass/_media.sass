@@ -11,8 +11,12 @@
 			padding: 10px 16px
 
 	.card
-		width: 230px
-		height: 230px
+		width: 255px
+		height: 255px
+	.activities__card
+		margin-right: 20px
+		&:nth-child(4n)
+			margin-right: 0
 
 /****************************/
 
@@ -88,10 +92,11 @@
 			flex-wrap: wrap
 			margin: 0 auto
 		&__card
+			margin: 0px
 			margin-bottom: 20px
 
 	.card
-		width: 339px
+		width: 48%
 		height: 255px
 		
 
@@ -224,17 +229,19 @@
 				padding: 0 30px 30px				
 				width: 100%
 				&:before, &:after
-					display: none				
+					display: none
+			&__text
+				text-align: left					
 			&__button
-				top: 30px				
+				top: 30px		
 				transform: translate(-50%, 0)
 				&_prev
 					left: 50%
-					margin-left: -65px
+					margin-left: -105px
 					transform: translate(-50%, 0)
 				&_next
 					right: 50%
-					margin-right: -65px
+					margin-right: -105px
 					transform: translate(50%, 0)
 
 	.activities
@@ -282,8 +289,32 @@
 		border: blue 5px
 
 	.reviews
+		padding-bottom: 50px
 		&__title
 			max-width: 250px
+			margin-bottom: 42px
+			font-size: 18px 
+			line-height: 23px 
+		&-slider
+			&__item
+				padding: 0 30px 30px				
+				width: 100%
+				&:before, &:after
+					display: none
+			&__text
+				text-align: left				
+			&__button
+				top: 30px				
+				transform: translate(-50%, 0)
+				&_prev
+					left: 50%
+					margin-left: -105px
+					transform: translate(-50%, 0)
+				&_next
+					right: 50%
+					margin-right: -105px
+					transform: translate(50%, 0)
+	
 
 	.activities
 		&__title
@@ -293,6 +324,8 @@
 			margin-bottom: 40px
 	.card
 		width: 100%
+		
+		margin-bottom: 15px
 		// min-width: 280px
 	
 /****************************/
