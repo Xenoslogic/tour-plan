@@ -14,6 +14,8 @@
 		width: 230px
 		height: 230px
 
+/****************************/
+
 @media (max-width: 992px) 
 	// a, button
 	// 	cursor: default
@@ -58,14 +60,42 @@
 	.map
 		width: 48.5% //340px
 
-	.packages
+	.newsletter
+		padding: 102px 0 103px 0
 		&-wrapper
-			grid-template-columns: repeat(2, 1fr)
-			grid-template-rows: repeat(3, 1fr)
+			max-width: 700px
+			margin: 34 auto			
+
+	.reviews
+		padding-bottom: 60px
 		&__title
-			font-size: 30px
-			margin-bottom: 54px
+			margin-bottom: 50px
+			font-size: 30px 
+			line-height: 38px 
+		&-slider
+			&__item
+				max-width: 580px
 	
+	.activities
+		padding-top: 60px
+		padding-bottom: 70px
+		&__title
+			max-width: 700px
+			margin-top: 0px
+			margin-bottom: 57px
+		&-wrapper
+			max-width: 700px
+			flex-wrap: wrap
+			margin: 0 auto
+		&__card
+			margin-bottom: 20px
+
+	.card
+		width: 339px
+		height: 255px
+		
+
+/**************************************/
 
 @media (max-width: 767px)
 	body
@@ -163,47 +193,61 @@
 			&__slider
 				height: 350px
 
-	.packages
+	.parallax-window 
+	.newsletter
+		padding: 76px 0 83px 0
 		&__title
-			font-size: 18px
-			margin-bottom: 42px
+			margin-bottom: 37px
 		&-wrapper
-			grid-template-columns: 100%
-			grid-template-rows: repeat(5, 1fr)
-			justify-items: center
-		&__item
-			width: 83%
-			&_2x
-				grid-column: 1
-				flex-wrap: wrap
+			flex-direction: column
+			align-items: flex-start
+			margin: 20px auto
+			max-width: 570px 
+			width: 92% 
 
+		&-title
+			font-size: 20px 
+			line-height: 25px 
+			&__strong
+				font-size: 30px 
+				line-height: 38px 
 
-	.item	
-		&__photo
-			&_2x
-				height: 50%
-				max-width: 100%
-		&__paragraph
-			display: none
-		&__about
-			padding: 30px 20px 25px 20px
-			&_2x
-				max-width: 100%
+	.reviews
+		padding-bottom: 50px
+		&__title
+			width: 100%
+			margin-bottom: 42px
+			font-size: 18px 
+			line-height: 23px 
+		&-slider
+			&__item
+				padding: 0 30px 30px				
 				width: 100%
-				height: 50%
-				padding: 30px 21px 25px 32px
-		&__name
-			&_2x
-				margin: 0 0 18px 0
-		&__stars
-			display: none
-		&__offer
-			&_2x
-				max-width: 61px
-				min-height: 18px
-				font-size: 8px
-				line-height: 10px
-				padding: 4px 9px
+				&:before, &:after
+					display: none				
+			&__button
+				top: 30px				
+				transform: translate(-50%, 0)
+				&_prev
+					left: 50%
+					margin-left: -65px
+					transform: translate(-50%, 0)
+				&_next
+					right: 50%
+					margin-right: -65px
+					transform: translate(50%, 0)
+
+	.activities
+		padding-top: 40px
+		padding-bottom: 60px
+	.card
+		width: 48%
+		height: 255px
+
+	
+	
+
+/****************************/				
 	
 @media (max-width: 700px)
 	
@@ -224,17 +268,6 @@
 	.map
 		width: 100%
 		margin-top: 20px
-
-	.packages
-		&__item
-			width: 100%
-
-	.item
-		&__price
-			// text-align: end
-			margin-bottom: 5px
-		&-price-wrapper
-			flex-direction: column
 
 	.newsletter
 		height: 319px
@@ -262,6 +295,8 @@
 		width: 100%
 		// min-width: 280px
 	
+/****************************/
+
 
 @media (max-width: 400px)
 	.hotel
@@ -280,7 +315,6 @@
 		width: 280px
 		height: 173px
 		
-		
 
 
 			
@@ -289,12 +323,16 @@
 	// 	&__textarea
 	// 		width: 250px
 
+/****************************/
+
 @media (max-height: 583px)
 	.navbar
 		&-menu
 			&_visible
 				overflow-y: scroll
 
+
+/****************************/
 
 @media (max-height: 422px)
 	.modal

@@ -9,6 +9,7 @@
 		<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/swiper-bundle.min.css" />
+		<link rel="stylesheet" href="css/aos.css" />
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
@@ -200,8 +201,8 @@
 						</div>
 						<!-- /.booking -->
 						<div class="map">
-							<!-- <img src="img/map.jpg" alt="map" class="map__image" /> -->
-							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.0413263625383!2d98.29254741537973!3d7.890745494315375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30503b7bfcd9f903%3A0xf7065fac1e3d7c48!2sDoubleTree%20by%20Hilton%20Phuket%20Banthai%20Resort!5e0!3m2!1sru!2sru!4v1600876398295!5m2!1sru!2sru" width="347" height="213" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+							
+							<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A22f103bb3926bd6da9addb7ad619fbdb62be4a4fe3ad98fe7b8d4ddc65b64258&amp;width=347&amp;height=240&amp;lang=ru_RU&amp;scroll=true"></script>
 							
 						</div>
 						<!-- /.map -->
@@ -213,8 +214,166 @@
 			
 			<!-- /.container -->
 		</section>
+
+		<section class="newsletter parallax-window" data-depth="0.5" data-parallax="scroll" data-image-src="img/newsletter-bg.jpg">
+			<div class="newsletter-wrapper">
+				<h2 class="newsletter-title newsletter__title" data-aos="fade-up">
+					subscribe to our
+					<span class="newsletter-title__strong">Newsletter</span>
+				</h2>
+
+				<form action="php/send.php" method="POST" class="subscribe form newsletter__subscribe" data-aos="fade-up">
+					<!-- <div class="newsletter__input-group"> -->
+					<input type="email" name="newsletter_email" class="subscribe__input" placeholder="Your email address" required />
+					<!-- </div> -->
+					<button class="subscribe__button">Send</button>
+				</form>
+			</div>
+			<!-- /.newsletter-wrapper -->
+		</section>
+
+		<section class="reviews" data-depth="1">
+			<div class="container">
+				<h2 class="reviews__title">
+					What people thinks about us
+				</h2>
+
+				<div class="swiper-container reviews-slider">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="reviews-slider__item">
+								<div class="reviews-slider__profile">
+									<img src="img/reviews-avatar.jpg" alt="Photo: Megan Fox" class="image reviews-slider__avatar" />
+									<h3 class="reviews-slider__username">Megan Fox</h3>
+									<span class="reviews-slider__date">Stayed 18 Nov, 2019</span>
+									<div class="reviews-slider__rating">
+										<img src="img/star.svg" alt="Icon: Star" class="image star" />
+										<img src="img/star.svg" alt="Icon: Star" class="image star" />
+										<img src="img/star.svg" alt="Icon: Star" class="image star" />
+										<img src="img/star.svg" alt="Icon: Star" class="image star" />
+										<img src="img/star.svg" alt="Icon: Star" class="image star" />
+									</div>
+									<!-- /.user-rating -->
+								</div>
+								<!-- /.reviews-slider__profile -->
+								<p class="reviews-slider__text">
+									It was very nice hotel with cleanliness. Staff behavior was good and polite. They welcome us very well. Issue
+									was only that Lift was not in working and we were allotted to 3rd floor and amenities articles were in corner of
+									gallery which were giving bad feeling. Breakfast was good and support of the staff was also very nice. Location
+									is not good as per atmosphere, it is very nearby most of the popular places but self location in a narrow street
+									is not good. Overall it was a good experience and could recommend.
+								</p>
+							</div>
+							<!-- /.reviews-slider__item -->
+						</div>
+						<!-- swiper-slide -->
+
+						<div class="swiper-slide">
+							<div class="reviews-slider__item">
+								<div class="reviews-slider__profile">
+									<img src="img/reviews-avatar-2.jpg" alt="Photo: Anita Sindht" class="image reviews-slider__avatar" />
+									<h3 class="reviews-slider__username">Anita Sindht</h3>
+									<span class="reviews-slider__date">Stayed 13 Sep, 2019</span>
+									<div class="reviews-slider__rating">
+										<img src="img/star.svg" alt="Icon: Star" class="image star" />
+										<img src="img/star.svg" alt="Icon: Star" class="image star" />
+										<img src="img/star.svg" alt="Icon: Star" class="image star" />
+									</div>
+									<!-- /.user-rating -->
+								</div>
+								<!-- /.reviews-slider__profile -->
+								<p class="reviews-slider__text">
+									It was very nice hotel with cleanliness. Staff behavior was good and polite. They welcome us very well.
+								</p>
+							</div>
+							<!-- /.reviews-slider__item -->
+						</div>
+						<!-- swiper-slide -->
+
+						<div class="swiper-slide">
+							<div class="reviews-slider__item">
+								<div class="reviews-slider__profile">
+									<img src="img/reviews-avatar-3.jpg" alt="Photo: Daviv Mayer" class="image reviews-slider__avatar" />
+									<h3 class="reviews-slider__username">Daviv Mayer</h3>
+									<span class="reviews-slider__date">Stayed 30 Nov, 2019</span>
+									<div class="reviews-slider__rating">
+										<img src="img/star.svg" alt="Icon: Star" class="image star" />
+										<img src="img/star.svg" alt="Icon: Star" class="image star" />
+										<img src="img/star.svg" alt="Icon: Star" class="image star" />
+										<img src="img/star.svg" alt="Icon: Star" class="image star" />
+									</div>
+									<!-- /.user-rating -->
+								</div>
+								<!-- /.reviews-slider__profile -->
+								<p class="reviews-slider__text">
+									It was very nice hotel with cleanliness. Location is not good as per atmosphere, it is very nearby most of the
+									popular places but self location in a narrow street is not good. Overall it was a good experience and could
+									recommend.
+								</p>
+							</div>
+							<!-- /.reviews-slider__item -->
+						</div>
+						<!-- swiper-slide -->
+					</div>
+					<!-- swiper-wrapper -->
+
+					<button class="reviews-slider__button reviews-slider__button_prev"></button>
+					<button class="reviews-slider__button reviews-slider__button_next"></button>
+				</div>
+				<!-- /.slider -->
+			</div>
+			<!-- /.container -->
+		</section>
+
+		<section class="activities">
+			<div class="container">
+				<h2 class="activities__title">Other activities</h2>
+				<div class="activities-wrapper">
+					<div class="card activities__card">
+						<img src="img/activity-1.jpg" alt="The curious corner of chamarel" class="image card__image" />
+						<h3 class="card__title">The curious corner of&nbsp;chamarel</h3>
+						<button class="card__button" data-toggle="modal" data-href="#booking-modal">Book Now</button>
+					</div>
+					<!-- /.card -->
+
+					<div class="card activities__card">
+						<img src="img/activity-2.jpg" alt="Gymkhana club golf course" class="image card__image" />
+						<h3 class="card__title">Gymkhana club golf course</h3>
+						<button class="card__button" data-toggle="modal" data-href="#booking-modal">Book Now</button>
+					</div>
+					<!-- /.card -->
+
+					<div class="card activities__card">
+						<img src="img/activity-3.jpg" alt="Tamarind falls hiking trip - full day" class="image card__image" />
+						<h3 class="card__title">
+							Tamarind falls hiking trip&#160;-&#160;full day
+						</h3>
+						<button class="card__button" data-toggle="modal" data-href="#booking-modal">Book Now</button>
+					</div>
+					<!-- /.card -->
+
+					<div class="card activities__card">
+						<img
+							src="img/activity-4.jpg"
+							alt="The blue marine discovery
+						quest"
+							class="image card__image"
+						/>
+						<h3 class="card__title">The blue marine discovery quest</h3>
+						<button class="card__button" data-toggle="modal" data-href="#booking-modal">Book Now</button>
+					</div>
+					<!-- /.card -->
+				</div>
+				<!-- /.activities-wrapper -->
+			</div>
+			<!-- /.container -->
+		</section>
 		
 		<script src="js/jquery-3.5.1.min.js"></script>
 		<script src="js/swiper-bundle.min.js"></script>
+		<script src="js/aos.js"></script>
+		<script src="js/parallax.min.js"></script>
+		<script src="js/jquery.validate.min.js"></script>
+		<script src="js/jquery.mask.min.js"></script>
 		<script src="js/main.js"></script>
 	</body>
