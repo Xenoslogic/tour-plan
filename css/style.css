@@ -490,9 +490,6 @@ a:hover {
   padding: 7px 11px;
 }
 .item__about {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   height: 50%;
   padding: 30px 21px 25px 32px;
 }
@@ -502,12 +499,19 @@ a:hover {
   max-width: 364px;
   padding: 46px 21px 30px 43px;
 }
+.item-star-wrapper {
+  margin-bottom: 27px;
+}
 .item__paragraph {
+  margin-bottom: 34px;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 160.6%;
   color: white;
+}
+.item__room {
+  margin-bottom: 37px;
 }
 .item__name {
   margin: 0 0 18px 0;
