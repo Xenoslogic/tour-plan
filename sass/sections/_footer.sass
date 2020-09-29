@@ -1,0 +1,146 @@
+.footer
+	background-color: $dark
+	color: $light
+	padding-top: 108px
+	padding-bottom: 46px
+	&-wrapper
+		display: grid
+		grid-template-columns: repeat(4, minmax(max-content, 1fr))
+		grid-gap: 20px
+		grid-auto-rows: minmax(40px, min-content)
+		align-items: start
+	&__title
+		margin: 0 0 16px 0
+		font-style: normal
+		font-weight: bold
+		font-size: 18px
+		line-height: 23px
+		text-transform: uppercase
+		&_inline
+			margin: 0 43px 0 0 
+		&_mb-30
+			margin-bottom: 34px
+	&__legal
+		justify-self: end
+	&__logo
+		width: 155px
+		align-self: center
+		grid-row: 1/3
+	&__categories
+		grid-row: 1/4
+	&__social
+		&-links
+			display: flex
+			align-items: center
+			justify-content: space-between
+			min-width: 83px			
+		&-network
+			display: flex
+			align-items: start
+			grid-row: 2/4
+			grid-column: span 2
+	&__contact
+		&-details
+			grid-column: span 2
+		&-form
+			grid-column: span 2
+	&__ul
+		padding: 0
+		margin: 0
+		list-style: none
+	&__item
+		display: flex
+		align-items: flex-start
+		font-style: normal
+		font-weight: normal
+		font-size: 14px
+		line-height: 160%
+		color: $gray
+		&_mb-20
+			margin-bottom: 20px
+	&__icon		
+		margin-right: 20px
+		&-wrapper
+			min-width: 40px
+	&__contacts
+		display: flex
+		flex-direction: column
+		&-wrapper
+			display: flex
+			flex-wrap: wrap
+	&__text
+		color: $gray
+		margin-bottom: 22px
+	&__link
+		text-decoration: none
+		color: inherit
+	&__input
+		width: 100%
+		&-group
+			width: 48%
+			margin-bottom: 15px
+	&__form
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		&-group
+			padding-bottom: 20px
+			flex-basis: 48%
+			position: relative
+		&-info
+			display: block
+			padding-top: 14px
+		&::placeholder
+			color: $gray
+			font-size: 12px
+
+	&__textarea
+		resize: none
+		height: 123px
+		flex-basis: 100%
+		margin-bottom: 23px	
+		padding-top: 15px
+		padding-left: 20px	
+		&::placeholder
+			color: $gray
+			font-size: 12px
+	&__info
+		display: flex
+		justify-content: flex-end
+		margin-top: 95px
+
+.form
+	&__error[for=footer_name], &__error[for=footer_phone]
+		padding-top: 4px
+		position: absolute
+		bottom: 4px
+		left: 2px
+		font-size: 12px
+		font-weight: bold
+
+.info
+	&-wrapper
+		display: flex
+		justify-content: space-between
+		width: 696px
+	&__text
+		font-style: normal
+		font-weight: normal
+		font-size: 12px
+		line-height: 15px
+		color: $light
+	&__cards
+		width: 136px
+		height: 22px
+	&__link
+		margin-right: 10px
+		text-decoration: none
+		color: inherit
+		font-style: normal
+		font-weight: normal
+		font-size: 12px
+		line-height: 15px
+	&__span
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
