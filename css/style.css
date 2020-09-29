@@ -546,6 +546,7 @@ a:hover {
 .item-price-wrapper {
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
 }
 .item__price {
   display: flex;
