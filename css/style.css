@@ -1660,15 +1660,15 @@ a:hover {
     width: 280px;
     height: 173px;
   }
+
+  .search {
+    min-width: 245px;
+  }
 }
 /****************************/
 @media (max-height: 583px) {
   .navbar-menu_visible {
     overflow-y: scroll;
-  }
-
-  .search {
-    min-width: 245px;
   }
 }
 /****************************/
