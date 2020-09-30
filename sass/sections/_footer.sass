@@ -45,6 +45,9 @@
 		&-form
 			grid-column: span 2
 	&__ul
+		font-weight: 400
+		font-size: 14px
+		line-height: 160%
 		padding: 0
 		margin: 0
 		list-style: none
@@ -69,6 +72,9 @@
 			display: flex
 			flex-wrap: wrap
 	&__text
+		font-weight: 400
+		font-size: 14px
+		line-height: 160%
 		color: $gray
 		margin-bottom: 22px
 	&__link
@@ -88,8 +94,10 @@
 			flex-basis: 48%
 			position: relative
 		&-info
+			font-weight: 700
+			font-size: 12px
 			display: block
-			padding-top: 14px
+			padding-top: 20px
 		&::placeholder
 			color: $gray
 			font-size: 12px
@@ -100,10 +108,13 @@
 		flex-basis: 100%
 		margin-bottom: 23px	
 		padding-top: 15px
-		padding-left: 20px	
+		padding-left: 20px
+		border-radius: 4px	
 		&::placeholder
 			color: $gray
 			font-size: 12px
+	&__button
+		min-width: 160px
 	&__info
 		display: flex
 		justify-content: flex-end

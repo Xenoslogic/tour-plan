@@ -921,6 +921,9 @@ a:hover {
   grid-column: span 2;
 }
 .footer__ul {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 160%;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -952,6 +955,9 @@ a:hover {
   flex-wrap: wrap;
 }
 .footer__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 160%;
   color: #BDBDBD;
   margin-bottom: 22px;
 }
@@ -977,8 +983,10 @@ a:hover {
   position: relative;
 }
 .footer__form-info {
+  font-weight: 700;
+  font-size: 12px;
   display: block;
-  padding-top: 14px;
+  padding-top: 20px;
 }
 .footer__form::placeholder {
   color: #BDBDBD;
@@ -991,10 +999,14 @@ a:hover {
   margin-bottom: 23px;
   padding-top: 15px;
   padding-left: 20px;
+  border-radius: 4px;
 }
 .footer__textarea::placeholder {
   color: #BDBDBD;
   font-size: 12px;
+}
+.footer__button {
+  min-width: 160px;
 }
 .footer__info {
   display: flex;
@@ -1189,6 +1201,7 @@ a:hover {
     grid-column: span 2;
   }
   .footer__social-network {
+    margin-left: -100px;
     justify-self: center;
     grid-row: 1/2;
     grid-column: span 3;
@@ -1216,6 +1229,12 @@ a:hover {
   }
   .footer__info {
     margin-top: 63px;
+  }
+  .footer__ul {
+    margin-bottom: 20px;
+  }
+  .footer__form {
+    width: 580px;
   }
 }
 /**************************************/
