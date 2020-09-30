@@ -1666,6 +1666,10 @@ a:hover {
   .navbar-menu_visible {
     overflow-y: scroll;
   }
+
+  .search {
+    min-width: 245px;
+  }
 }
 /****************************/
 /*# sourceMappingURL=style.css.map */
