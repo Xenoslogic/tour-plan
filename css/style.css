@@ -1462,10 +1462,6 @@ a:hover {
     width: 48%;
     height: 255px;
   }
-
-  .footer__input-group {
-    flex-basis: 100%;
-  }
 }
 /****************************/				
 @media (max-width: 700px) {
@@ -1500,6 +1496,7 @@ a:hover {
     grid-column: 1;
   }
   .footer__social-network {
+    margin: 0px;
     justify-self: start;
     flex-wrap: wrap;
     grid-row: 2;
@@ -1633,8 +1630,18 @@ a:hover {
     width: 100%;
     margin-bottom: 15px;
   }
+
+  .footer__form {
+    width: 95%;
+  }
 }
 /****************************/
+@media (max-width: 550px) {
+  .footer__input-group {
+    flex-basis: 100%;
+  }
+}
+/****************************/		
 @media (max-width: 400px) {
   .hotel-grid__slider {
     width: 280px;

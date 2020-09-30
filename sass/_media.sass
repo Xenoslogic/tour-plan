@@ -346,10 +346,10 @@
 		width: 48%
 		height: 255px
 
-	.footer
-		&__input
-			&-group
-				flex-basis: 100%
+	// .footer
+	// 	&__input
+	// 		&-group
+	// 			flex-basis: 100%
 
 	
 	
@@ -383,6 +383,7 @@
 			grid-column: 1
 		&__social
 			&-network
+				margin: 0px
 				justify-self: start
 				flex-wrap: wrap				
 				grid-row: 2
@@ -497,9 +498,21 @@
 		
 		margin-bottom: 15px
 		// min-width: 280px
+
+	.footer
+		&__form
+			width: 95%
 	
 /****************************/
 
+@media (max-width: 550px)
+	.footer
+		&__input
+			&-group
+				flex-basis: 100%
+
+
+/****************************/		
 
 @media (max-width: 400px)
 	.hotel
