@@ -1192,7 +1192,7 @@ a:hover {
     grid-row-gap: 38px;
   }
   .footer__input-group {
-    flex-basis: 48%;
+    flex-basis: 255px;
   }
   .footer__logo {
     width: 104px;
@@ -1234,7 +1234,7 @@ a:hover {
     margin-bottom: 20px;
   }
   .footer__form {
-    width: 580px;
+    width: 540px;
   }
 }
 /**************************************/
@@ -1303,7 +1303,7 @@ a:hover {
   }
   .navbar-top__menu__image {
     width: 16px;
-    height: 11px;
+    height: 16px;
   }
 
   .user__name_light {
