@@ -6,6 +6,7 @@ require 'Exception.php';
 
 // Переменные, которые отправляет пользователь
 $name = $_POST['name'];
+$email = $_POST['email']
 $phone = $_POST['phone'];
 $message = $_POST['message'];
 
@@ -16,6 +17,7 @@ $body = "
 <h2>Новое письмо</h2>
 <b>Имя:</b> $name<br>
 <b>Телефон:</b> $phone<br><br>
+<b>Email:</b> $email<br><br>
 <b>Сообщение:</b><br>$message
 ";
 

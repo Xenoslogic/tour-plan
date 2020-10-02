@@ -1060,6 +1060,98 @@ a:hover {
   flex-wrap: wrap;
 }
 
+.modal__overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #008fdf63;
+  z-index: 100;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.modal__overlay_visible {
+  visibility: visible;
+  opacity: 1;
+}
+.modal__dialog {
+  position: fixed;
+  max-width: 480px;
+  min-height: 490px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 33px 88px;
+  background-color: #0A223D;
+  color: white;
+  border-radius: 8px;
+  z-index: 101;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.modal__dialog_visible {
+  visibility: visible;
+  opacity: 1;
+}
+.modal__close {
+  position: absolute;
+  right: 18px;
+  top: 17px;
+  text-decoration: none;
+  cursor: pointer;
+  overflow: hidden;
+}
+.modal__title {
+  margin: 0 0 15px 0;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.modal__input {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.modal__input-group {
+  position: relative;
+  width: 100%;
+}
+.modal__textarea {
+  width: 100%;
+  resize: none;
+  padding-top: 15px;
+  padding-left: 20px;
+}
+.modal__textarea::placeholder {
+  color: #BDBDBD;
+  font-size: 12px;
+}
+.modal__button {
+  margin-top: 15px;
+  margin-right: 45px;
+  width: 160px;
+  min-height: 50px;
+}
+.modal__form-info {
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.form__error[for=name], .form__error[for=phone], .form__error[for=email] {
+  padding-top: 4px;
+  position: absolute;
+  bottom: 4px;
+  left: 2px;
+  font-size: 12px;
+  font-weight: bold;
+  -webkit-text-stroke: 0.5px red;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -1241,6 +1333,13 @@ a:hover {
   }
   .footer__form {
     width: 540px;
+  }
+
+  .modal__dialog {
+    padding: 33px 48px;
+  }
+  .modal__button {
+    margin-right: 30px;
   }
 }
 /**************************************/
@@ -1473,9 +1572,17 @@ a:hover {
     width: 450px;
     height: 200px;
   }
+
+  .modal__dialog {
+    padding: 33px 28px;
+  }
 }
 /****************************/				
 @media (max-width: 700px) {
+  .modal__button {
+    width: 100%;
+  }
+
   .footer {
     padding-top: 69px;
     padding-bottom: 21px;
@@ -1645,6 +1752,16 @@ a:hover {
   .footer__form {
     width: 95%;
   }
+
+  .modal__dialog {
+    width: 90%;
+  }
+  .modal__title {
+    font-size: 16px;
+  }
+  .modal__button {
+    width: 100%;
+  }
 }
 /****************************/
 @media (max-width: 550px) {
@@ -1683,4 +1800,9 @@ a:hover {
   }
 }
 /****************************/
+@media (max-height: 422px) {
+  .modal__dialog {
+    overflow-y: scroll;
+  }
+}
 /*# sourceMappingURL=style.css.map */

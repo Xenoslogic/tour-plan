@@ -464,9 +464,9 @@
 					<span class="newsletter-title__strong">Newsletter</span>
 				</h2>
 
-				<form action="php/send.php" method="POST" class="subscribe form newsletter__subscribe" data-aos="fade-up">
+				<form action="phpmailer/send.php" method="POST" class="subscribe form newsletter__subscribe" data-aos="fade-up">
 					<!-- <div class="newsletter__input-group"> -->
-					<input type="email" name="newsletter_email" class="subscribe__input" placeholder="Your email address" required />
+					<input type="email" name="email" class="subscribe__input" placeholder="Your email address" required />
 					<!-- </div> -->
 					<button class="subscribe__button">Send</button>
 				</form>
@@ -795,6 +795,35 @@
 			</div>
 			<!-- /.container -->
 		</footer>
+
+		<!-- MODAL WINDOW -->
+		<div class="modal" id="booking-modal">
+			<div class="modal__overlay"></div>
+			<!-- /.modal__overlay -->
+			<div class="modal__dialog">
+				<a href="#" class="modal__close">
+					<img src="img/close.svg" alt="Icon: close" />
+				</a>
+				<h3 class="modal__title modal__title_mb-30">Booking</h3>
+				<form action="phpmailer/send.php" method="POST" class="form modal__form">
+					<div class="modal__input-group">
+						<input type="text" name="name" class="input modal__input" placeholder="Your Full Name*" required />
+					</div>
+					<div class="modal__input-group">
+						<input type="tel" name="phone" class="input modal__input" placeholder="Phone Number*" required />
+					</div>
+					<div class="modal__input-group">
+						<input type="email" name="email" class="input modal__input" placeholder="Email*" required />
+					</div>
+
+					<textarea name="message" class="textarea modal__textarea" placeholder="Message"></textarea>
+					<button class="button modal__button">Send</button>
+					<span class="form-info modal__form-info">* Required Fields</span>
+				</form>
+			</div>
+			<!-- /.modal__dialog -->
+		</div>
+		<!-- /.modal -->
 		
 		<script src="js/jquery-3.5.1.min.js"></script>
 		<script src="js/swiper-bundle.min.js"></script>

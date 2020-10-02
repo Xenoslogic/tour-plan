@@ -52,6 +52,31 @@ $(document).ready(function () {
 		document.querySelector(".menu-button__image").src = pathImg;
 	}
 
+	// Модальные окна
+	const closeModalButton = $(".modal__close");
+	closeModalButton.on("click", closeModal);
+	$(document).keyup((e) => {
+		if (e.key === "Escape") {
+			closeModal(e);
+		}
+	});
+
+	function closeModal(event) {
+		event.preventDefault();
+		$(".modal__overlay").removeClass("modal__overlay_visible");
+		$(".modal__dialog").removeClass("modal__dialog_visible");
+	}
+
+	let modalButton = $("[data-toggle=modal]");
+	modalButton.on("click", openModal);
+
+	function openModal() {
+		let targetModal = $(this).attr("data-href");
+
+		$(targetModal).find(".modal__overlay").addClass("modal__overlay_visible");
+		$(targetModal).find(".modal__dialog").addClass("modal__dialog_visible");
+	}
+
 
 	// валидация
 	$("[name=phone]").mask("+7(000) 000-00-00");

@@ -153,6 +153,11 @@
 			margin-bottom: 20px
 		&__form
 			width: 540px
+	.modal
+		&__dialog
+			padding: 33px 48px
+		&__button
+			margin-right: 30px
 		
 
 /**************************************/
@@ -354,6 +359,10 @@
 	.thankyou
 		width: 450px
 		height: 200px
+	.modal
+		&__dialog
+			padding: 33px 28px
+
   	
 	
 	
@@ -361,6 +370,10 @@
 /****************************/				
 	
 @media (max-width: 700px)
+	.modal
+		&__button
+			width: 100%
+			
 	.footer
 		padding-top: 69px
 		padding-bottom: 21px
@@ -422,6 +435,9 @@
 				flex-direction: column
 			&__text
 				margin-bottom: 10px
+
+
+
 
 @media (max-width: 600px)
 	.logo
@@ -506,6 +522,14 @@
 	.footer
 		&__form
 			width: 95%
+
+	.modal
+		&__dialog
+			width: 90%
+		&__title
+			font-size: 16px
+		&__button
+			width: 100%
 	
 /****************************/
 
@@ -559,3 +583,6 @@
 
 @media (max-height: 422px)
 	
+	.modal
+		&__dialog
+			overflow-y: scroll
