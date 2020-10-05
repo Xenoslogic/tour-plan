@@ -47,6 +47,17 @@ a:hover
   // color: #6cacef
   text-shadow: 0 0 1px #ffffff
 
+.form
+  &__error[for=name], &__error[for=phone], &__error[for=email]
+    padding-top: 4px
+    position: absolute
+    top: 0px
+    left: 2px
+    font-size: 12px
+    font-weight: bold
+    color: black
+    -webkit-text-stroke: 0.5px red
+
 .thankyou
   width: 600px
   height: 450px

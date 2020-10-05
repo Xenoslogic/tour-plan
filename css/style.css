@@ -51,6 +51,17 @@ a:hover {
   text-shadow: 0 0 1px #ffffff;
 }
 
+.form__error[for=name], .form__error[for=phone], .form__error[for=email] {
+  padding-top: 4px;
+  position: absolute;
+  top: 0px;
+  left: 2px;
+  font-size: 12px;
+  font-weight: bold;
+  color: black;
+  -webkit-text-stroke: 0.5px red;
+}
+
 .thankyou {
   width: 600px;
   height: 450px;
@@ -975,6 +986,7 @@ a:hover {
   width: 100%;
 }
 .footer__input-group {
+  position: relative;
   width: 48%;
   margin-bottom: 15px;
 }
@@ -1078,7 +1090,7 @@ a:hover {
 }
 .modal__dialog {
   position: fixed;
-  max-width: 480px;
+  width: 480px;
   min-height: 490px;
   left: 50%;
   top: 50%;
@@ -1115,7 +1127,7 @@ a:hover {
 }
 .modal__input {
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 .modal__input-group {
   position: relative;
@@ -1123,33 +1135,45 @@ a:hover {
 }
 .modal__textarea {
   width: 100%;
+  min-height: 125px;
   resize: none;
   padding-top: 15px;
   padding-left: 20px;
+  border-radius: 4px;
 }
 .modal__textarea::placeholder {
   color: #BDBDBD;
   font-size: 12px;
 }
+.modal__btn-info-bind {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
 .modal__button {
   margin-top: 15px;
-  margin-right: 45px;
   width: 160px;
   min-height: 50px;
 }
 .modal__form-info {
+  padding-top: 10px;
   font-weight: 700;
   font-size: 12px;
 }
 
-.form__error[for=name], .form__error[for=phone], .form__error[for=email] {
-  padding-top: 4px;
-  position: absolute;
-  bottom: 4px;
-  left: 2px;
-  font-size: 12px;
-  font-weight: bold;
-  -webkit-text-stroke: 0.5px red;
+.thankyou {
+  width: 600px;
+  height: 200px;
+  background-image: url("../img/send-email.png");
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.thankyou__message {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 36px;
 }
 
 @media (max-width: 1200px) {
@@ -1339,7 +1363,7 @@ a:hover {
     padding: 33px 48px;
   }
   .modal__button {
-    margin-right: 30px;
+    margin-right: 25px;
   }
 }
 /**************************************/
@@ -1581,6 +1605,7 @@ a:hover {
 @media (max-width: 700px) {
   .modal__button {
     width: 100%;
+    margin-right: 0;
   }
 
   .footer {
@@ -1768,6 +1793,14 @@ a:hover {
   .footer__input-group {
     flex-basis: 100%;
   }
+
+  .thankyou {
+    width: 350px;
+    height: 150px;
+  }
+  .thankyou__message {
+    font-size: 26px;
+  }
 }
 /****************************/		
 @media (max-width: 400px) {
@@ -1791,6 +1824,14 @@ a:hover {
 
   .search {
     min-width: 245px;
+  }
+
+  .thankyou {
+    width: 300px;
+    height: 130px;
+  }
+  .thankyou__message {
+    font-size: 22px;
   }
 }
 /****************************/

@@ -15,7 +15,7 @@
 			opacity: 1			
 	&__dialog
 		position: fixed
-		max-width: 480px 
+		width: 480px 
 		min-height: 490px
 		left: 50%
 		top: 50%
@@ -48,33 +48,45 @@
 		text-align: center
 	&__input
 		width: 100%
-		margin-bottom: 20px
+		margin-bottom: 15px
 		&-group
 			position: relative
 			width: 100%
 	&__textarea
 		width: 100%
+		min-height: 125px
 		resize: none
 		padding-top: 15px
 		padding-left: 20px
+		border-radius: 4px
 		&::placeholder
 			color: $gray
 			font-size: 12px
+	&__btn-info-bind
+		display: flex
+		justify-content: space-between
+		align-items: center
+		flex-wrap: wrap
 	&__button
 		margin-top: 15px
-		margin-right: 45px
+		
 		width: 160px
 		min-height: 50px
 	&__form-info
+		padding-top: 10px
 		font-weight: 700
 		font-size: 12px
 	
-.form
-	&__error[for=name], &__error[for=phone], &__error[for=email]
-		padding-top: 4px
-		position: absolute
-		bottom: 4px
-		left: 2px
-		font-size: 12px
-		font-weight: bold
-		-webkit-text-stroke: 0.5px red
+
+
+.thankyou
+	width: 600px
+	height: 200px
+	background-image: url('../img/send-email.png')
+	background-position: center center
+	background-size: contain
+	background-repeat: no-repeat
+	&__message
+		margin: 0 auto
+		text-align: center
+		font-size: 36px

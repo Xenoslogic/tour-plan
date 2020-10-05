@@ -80,7 +80,7 @@ $(document).ready(function () {
 
 	// валидация
 	$("[name=phone]").mask("+7(000) 000-00-00");
-	$("[name=footer_phone]").mask("+7(000) 000-00-00");
+	
 
 	//обработка форм
 	$(".form").each(function () {
@@ -91,52 +91,34 @@ $(document).ready(function () {
 					required: true,
 					minlength: 2,
 				},
-				footer_name: {
-					required: true,
-					minlength: 2,
-				},
+	
 				email: {
 					required: true,
 					email: true,
 				},
-				newsletter_email: {
-					required: true,
-					email: true,
-				},
+			
 				phone: {
 					required: true,
 					minlength: 17,
 				},
-				footer_phone: {
-					required: true,
-					minlength: 17,
-				},
+			
 			},
 			messages: {
 				name: {
 					required: "Please specify your name",
 					minlength: "The name is too short",
 				},
-				footer_name: {
-					required: "Please specify your name",
-					minlength: "The name is too short",
-				},
+			
 				email: {
 					required: "Required field",
 					email: "Incorrect format (expected name@domain.com)",
 				},
-				newsletter_email: {
-					required: "Required field",
-					email: "Incorrect format (expected name@domain.com)",
-				},
+			
 				phone: {
 					required: "Required field",
 					minlength: "The phone number is too short",
 				},
-				footer_phone: {
-					required: "Required field",
-					minlength: "The phone number is too short",
-				},
+			
 			},
 		});
 	});
