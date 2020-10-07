@@ -122,6 +122,14 @@ $(document).ready(function () {
 			},
 		});
 	});
-
+// карты
+	$(".hotel-about").on("mousemove", function () {
+		$(".map__frame").attr(
+			"src",
+			"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.0413263625383!2d98.29254741537973!3d7.890745494315375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30503b7bfcd9f903%3A0xf7065fac1e3d7c48!2sDoubleTree%20by%20Hilton%20Phuket%20Banthai%20Resort!5e0!3m2!1sru!2sru!4v1602067964749!5m2!1sru!2sru"
+		);
+		$(".hotel-about").off("mousemove");
+		$(".map__image").css("display", "none");
+	});
 	
 });
