@@ -33,7 +33,7 @@ try {
     // Настройки вашей почты
     $mail->Host       = 'smtp.rambler.ru'; // SMTP сервера вашей почты
     $mail->Username   = 'serdtsevdv@rambler.ru'; // Логин на почте
-    $mail->Password   = 'UJhljcnmGHfqlf1364'; // Пароль на почте
+    $mail->Password   = ''; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
     $mail->setFrom('serdtsevdv@rambler.ru', 'Dmitriy'); // Адрес самой почты и имя отправителя

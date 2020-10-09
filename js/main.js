@@ -111,7 +111,7 @@ $(document).ready(function () {
 			
 				email: {
 					required: "Required field",
-					email: "Incorrect format (expected name@domain.com)",
+					email: "Incorrect format",
 				},
 			
 				phone: {
