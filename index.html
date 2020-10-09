@@ -464,16 +464,16 @@
 
 		<section class="newsletter parallax-window" data-depth="0.5" data-parallax="scroll" data-image-src="img/newsletter-bg.jpg">
 			<div class="newsletter-wrapper">
-				<h2 class="newsletter-title newsletter__title" data-aos="zoom-in" data-aos-duration="400">
+				<h2 class="newsletter-title newsletter__title"> <!-- data-aos="zoom-in" data-aos-duration="400"> -->
 					subscribe to our
 					<span class="newsletter-title__strong">Newsletter</span>
 				</h2>
 
-				<form action="phpmailer/send.php" method="POST" class="subscribe form newsletter__subscribe" data-aos="zoom-in" data-aos-duration="400">
+				<form action="phpmailer/send.php" method="POST" class="form subscribe newsletter__subscribe"> <!-- data-aos="zoom-in" data-aos-duration="400"> -->
 					<!-- <div class="newsletter__input-group"> -->
-					<input type="email" name="email" class="subscribe__input" placeholder="Your email address" required />
+						<input type="email" name="email" class="subscribe__input" placeholder="Your email address" required />
 					<!-- </div> -->
-					<button class="subscribe__button">Send</button>
+					<button class="subscribe__button" type="submit">Send</button>
 				</form>
 			</div>
 			<!-- /.newsletter-wrapper -->
