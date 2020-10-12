@@ -65,6 +65,7 @@ $(document).ready(function () {
 		event.preventDefault();
 		$(".modal__overlay").removeClass("modal__overlay_visible");
 		$(".modal__dialog").removeClass("modal__dialog_visible");
+		$("body").css("overflow-y", "auto");
 	}
 
 	let modalButton = $("[data-toggle=modal]");
@@ -75,6 +76,7 @@ $(document).ready(function () {
 
 		$(targetModal).find(".modal__overlay").addClass("modal__overlay_visible");
 		$(targetModal).find(".modal__dialog").addClass("modal__dialog_visible");
+		$("body").css("overflow-y", "hidden");
 	}
 
 
